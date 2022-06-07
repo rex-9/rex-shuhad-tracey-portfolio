@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
+    <style>
+        body {
+            position: relative;
+        }
+    </style>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid justify-content-center">
             <!-- Links -->
@@ -32,7 +37,13 @@
             </ul>
         </div>
     </nav>
-    
+    <div class="container-fluid justify-content-center">
+        <h2 class="heading text-body text-center">Hey there. I'm Alex</h2>
+        <h2 class="heading text-success text-center">I'm a software developer</h2>
+        <p class="heading text-body text-center">I can help you build a product, feature or website. Look through some of my work and <br> experience! If you like what you see and have a project you need coded,<br> don't hestiate to contact me.
+        
+        </p>
+    </div>
 </body>
 
 </html>
