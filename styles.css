@@ -1,0 +1,18 @@
+@media screen and (max-width: 576px) {
+    
+    .background {
+        background-image: url('./assets/header-ill-mobile.svg');
+        background-repeat: no-repeat;
+    }
+
+    .crane {
+        position: absolute;
+        top: 3700px;
+        right: -125px;
+        background-image: url('./assets/crane-mobile.svg');
+        width: 200px;
+        height: 250px;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
