@@ -10,11 +10,77 @@
     <style>
         body {
             position: relative;
+            overflow-x: hidden;
+        }
+
+        .background {
+            background-image: url('./assets/header-ill-desktop.svg');
+            background-repeat: no-repeat;
+        }
+
+        .crane {
+            position: absolute;
+            top: 2100px;
+            right: -15px;
+            background-image: url('./assets/crane-desktop.svg');
+            width: 200px;
+            height: 250px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .boat {
+            position: absolute;
+            top: 2350px;
+            left: -50px;
+            background-image: url('./assets/boat-desktop.svg');
+            width: 200px;
+            height: 250px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .contact-form-ill-1 {
+            position: absolute;
+            top: 3200px;
+            left: 0;
+            background-image: url('./assets/contact-form-ill-1-desktop.svg');
+            width: 200px;
+            height: 330px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .contact-form-ill-2 {
+            position: absolute;
+            top: 3350px;
+            left: 400px;
+            background-image: url('./assets/contact-form-ill-2-desktop.svg');
+            width: 120px;
+            height: 100px;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .contact-form-ill-3 {
+            position: absolute;
+            top: 3050px;
+            right: -15px;
+            background-image: url('./assets/contact-form-ill-3-desktop.svg');
+            width: 200px;
+            height: 500px;
+            background-repeat: no-repeat;
+            z-index: -1;
         }
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+<body class="background" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+    <div class="crane"></div>
+    <div class="boat"></div>
+    <div class="contact-form-ill-1"></div>
+    <div class="contact-form-ill-2"></div>
+    <div class="contact-form-ill-3"></div>
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid justify-content-center">
             <!-- Links -->
@@ -37,7 +103,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid justify-content-center" style="margin-top: 102px;">
+    <div class="container-fluid justify-content-center" style="margin-top: 150px;">
         <h2 class="heading text-body text-center h1">Hey there. I'm Alex</h2>
         <h2 class="heading text-success text-center h1">I'm a software developer</h2>
         <p class="heading text-body text-center">
@@ -47,243 +113,315 @@
             coded,<br />
             don't hestiate to contact me.
         </p>
-    </div>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="container-fluid">
-        <h2 class="text-body text-center h1">My Recent Works</h2>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col p-2 text-body">
-                    <div class="card p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                            <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby on
-                                    rails</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">CSS</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">JavaScript</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">HTML</span>
+        <div class="text-center mt-3">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">
+                        <img class="m-2" src="/assets/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <img class="m-2" src="/assets/linkedin.svg" alt="linkedin">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <img class="m-2" src="/assets/angellist.svg" alt="angellist">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <img class="m-2" src="/assets/medium.svg" alt="medium">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
+                        <img class="m-2" src="/assets/github.svg" alt="github">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container-fluid" style="margin-top: 680px;">
+            <h2 class="text-body text-center h1">My Recent Works</h2>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col p-2 text-body">
+                        <div class="card p-0 m-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
+                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                                <div class="text-center">
+                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                        on
+                                        rails</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">CSS</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">JavaScript</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">HTML</span>
+                                </div>
+                                <div class="text-center mt-2 mb-4">
+                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                        Project</button>
+                                </div>
                             </div>
-                            <div class="text-center mt-2 mb-4">
-                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                    Project</button>
+                        </div>
+                    </div>
+                    <div class="col p-2 text-body">
+                        <div class="card p-0 m-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
+                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                                <div class="text-center">
+                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                        on
+                                        rails</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">CSS</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">JavaScript</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">HTML</span>
+                                </div>
+                                <div class="text-center mt-2 mb-4">
+                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                        Project</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2 text-body">
+                        <div class="card p-0 m-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
+                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                                <div class="text-center">
+                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                        on
+                                        rails</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">CSS</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">JavaScript</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">HTML</span>
+                                </div>
+                                <div class="text-center mt-2 mb-4">
+                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                        Project</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col p-2 text-body">
-                    <div class="card p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                            <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby on
-                                    rails</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">CSS</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">JavaScript</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">HTML</span>
-                            </div>
-                            <div class="text-center mt-2 mb-4">
-                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                    Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col p-2 text-body">
-                    <div class="card p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                            <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby on
-                                    rails</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">CSS</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">JavaScript</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">HTML</span>
-                            </div>
-                            <div class="text-center mt-2 mb-4">
-                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                    Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col p-2 text-body">
-                    <div class="card p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                            <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby on
-                                    rails</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">CSS</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">JavaScript</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">HTML</span>
-                            </div>
-                            <div class="text-center mt-2 mb-4">
-                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                    Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col p-2 text-body">
-                    <div class="card p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                            <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby on
-                                    rails</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">CSS</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">JavaScript</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">HTML</span>
-                            </div>
-                            <div class="text-center mt-2 mb-4">
-                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                    Project</button>
+                <div class="row">
+                    <div class="col p-2 text-body">
+                        <div class="card p-0 m-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
+                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                                <div class="text-center">
+                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                        on
+                                        rails</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">CSS</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">JavaScript</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">HTML</span>
+                                </div>
+                                <div class="text-center mt-2 mb-4">
+                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                        Project</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col p-2 text-body">
-                    <div class="card p-0 m-0">
-                        <div class="card-body p-0 m-0">
-                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                            <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby on
-                                    rails</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">CSS</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">JavaScript</span>
-                                <span class="badge mb-2 mx-2 p-2 text-body"
-                                    style="background-color: #ebf0ee;">HTML</span>
+                    <div class="col p-2 text-body">
+                        <div class="card p-0 m-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
+                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                                <div class="text-center">
+                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                        on
+                                        rails</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">CSS</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">JavaScript</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">HTML</span>
+                                </div>
+                                <div class="text-center mt-2 mb-4">
+                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                        Project</button>
+                                </div>
                             </div>
-                            <div class="text-center mt-2 mb-4">
-                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                    Project</button>
+                        </div>
+                    </div>
+                    <div class="col p-2 text-body">
+                        <div class="card p-0 m-0">
+                            <div class="card-body p-0 m-0">
+                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
+                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                                <div class="text-center">
+                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                        on
+                                        rails</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">CSS</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">JavaScript</span>
+                                    <span class="badge mb-2 mx-2 p-2 text-body"
+                                        style="background-color: #ebf0ee;">HTML</span>
+                                </div>
+                                <div class="text-center mt-2 mb-4">
+                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                        Project</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Me Section -->
-    <section style="margin-top: 192px;" id="#about">
-        <div class="container-fluid justify-content-center">
-            <h2 class="heading text-body text-center h1">About Me</h2>
-            <p class="heading text-body text-center">
-                I can help you build a product, feature or website. Look through some of
-                my work and <br />
-                experience! If you like what you see and have a project you need
-                coded,<br />
-                don't hestiate to contact me.
-            </p>
-        </div>
-        <div class="text-center">
-            <button type="button" class="btn text-white" style="background-color: #36b37f;">Get the Resume</button>
-        </div>
-      <div class="row mt-5">          
-    <div class="col p-2 text-body">
-      <div class="card p-0 m-0 ms-5" style="width: 369px;">
-          <div class="card-body p-0 m-0" style= "height: 352px; background-color: #ebf0ee;">
-            <div>
-              <img class="img-fluid mx-auto d-block mt-5" src="./assets/languages.svg" alt="languages icon"/>
+        <!-- About Me Section -->
+        <section id="about" style="margin-top: 192px;">
+            <div class="container-fluid justify-content-center">
+                <h2 class="heading text-body text-center h1">About Me</h2>
+                <p class="heading text-body text-center">
+                    I can help you build a product, feature or website. Look through some of
+                    my work and <br />
+                    experience! If you like what you see and have a project you need
+                    coded,<br />
+                    don't hestiate to contact me.
+                </p>
             </div>
-              <h3 class="text-center pt-3 mb-4">Languages</h3>
-              <div class="text-center">
-                  <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">JavaScript</span>
-                  <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Ruby On Rails</span>
-                  <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">HTML</span>
-                  <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">CSS</span>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="col p-2 text-body">
-    <div class="card p-0 m-0" style="width: 369px;">
-        <div class="card-body p-0 m-0" style= "height: 352px; background-color: #ebf0ee;">
-          <div>
-            <img class="img-fluid mx-auto d-block mt-5" src="./assets/frameworks.svg" alt="languages icon"/>
-          </div>
-            <h3 class="text-center pt-3 mb-4">Frameworks</h3>
             <div class="text-center">
-                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Bootstrap</span>
-                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Ruby On Rails</span>
-                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">RSpec</span>
-                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Capybara</span>
-                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Selenium</span>
+                <button type="button" class="btn text-white" style="background-color: #36b37f;">Get the Resume</button>
             </div>
-        </div>
-    </div>
-</div>
-<div class="col p-2 text-body">
-  <div class="card p-0 m-0" style="width:369px;">
-      <div class="card-body p-0 m-0" style= "height: 352px; background-color: #ebf0ee;">
-        <div>
-          <img class="img-fluid mx-auto d-block mt-5" src="./assets/skills.svg" alt="languages icon"/>
-        </div>
-          <h3 class="text-center pt-3 mb-4">Skills</h3>
-          <div class="text-center">
-              <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Codekit</span>
-              <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Github</span>
-              <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Codepen</span>
-              <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Gitlab</span>
-              <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Terminal</span>
-          </div>
-      </div>
-  </div>
-</div>
-      </div>
-    </section>
+            <div class="row mt-5 mx-5">
+                <div class="col px-5 text-body">
+                    <div class="card" style="width: 369px;">
+                        <div class="card-body p-0 m-0" style="height: 352px; background-color: #ebf0ee;">
+                            <div>
+                                <img class="img-fluid mx-auto d-block mt-5" src="./assets/languages.svg"
+                                    alt="languages icon" />
+                            </div>
+                            <h3 class="text-center pt-3 mb-4">Languages</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">JavaScript</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Ruby On Rails</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">HTML</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-5 text-body">
+                    <div class="card" style="width: 369px;">
+                        <div class="card-body p-0 m-0" style="height: 352px; background-color: #ebf0ee;">
+                            <div>
+                                <img class="img-fluid mx-auto d-block mt-5" src="./assets/frameworks.svg"
+                                    alt="languages icon" />
+                            </div>
+                            <h3 class="text-center pt-3 mb-4">Frameworks</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Bootstrap</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Ruby On Rails</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">RSpec</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Capybara</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Selenium</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col px-5 text-body">
+                    <div class="card" style="width:369px;">
+                        <div class="card-body p-0 m-0" style="height: 352px; background-color: #ebf0ee;">
+                            <div>
+                                <img class="img-fluid mx-auto d-block mt-5" src="./assets/skills.svg"
+                                    alt="languages icon" />
+                            </div>
+                            <h3 class="text-center pt-3 mb-4">Skills</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Codekit</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Github</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Codepen</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Gitlab</span>
+                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Terminal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact section -->
-    <section class="container-fluid" style="margin-top: 164px;">
-        <div class="container-fluid mx-auto d-flex justify-content-around" style="max-width: 1200px;">
-            <p class="ms-2 h4 mt-5" style="height: 256px; line-height: 52px;">
-                I'm always interested in hearing<br> about new projects, so if you'd<br> like to chat please get in touch.
-            </p>
-            <form class="w-50" action="https://formspree.io/f/mzbooyno" method="post">
-              <div class="mb-3 mt-3  d-flex">
-                <label class="visually-hidden" for="LbFname">First Name</label>
-                <input type="text" class="form-control me-2" id="Fname" placeholder="First Name" name="First-name">
-                <label class="visually-hidden" for="LbLname">Last Name</label>
-                <input type="text" class="form-control ms-2" id="Lname" placeholder="Last Name" name="Last-name">
-              </div>
-              <div class="mb-3">
-                <label class="visually-hidden" for="Email">Email</label>
-                <input type="email" class="form-control" id="Email" placeholder="Email Address" name="Email">
-              </div>
-              <label class="visually-hidden" for="textarea">Write message here</label>
-              <textarea class="form-control" style="border: 1px #60c095 solid;" rows="5" id="textarea" placeholder="Typing something " name="textarea"></textarea>
-              <button type="submit" class="btn text-white mt-4" style="background-color: #36b37f;">Get In Touch</button>
-            </form>
-          </div>
-    </section>
+        <!-- Contact section -->
+        <section id="contact" class="container-fluid" style="margin-top: 164px;">
+            <div class="container-fluid mx-auto d-flex justify-content-around" style="max-width: 1200px;">
+                <p class="ms-2 h4 mt-5" style="height: 256px; line-height: 52px;">
+                    I'm always interested in hearing<br> about new projects, so if you'd<br> like to chat please get in
+                    touch.
+                </p>
+                <form class="w-50" action="https://formspree.io/f/mzbooyno" method="post">
+                    <div class="mb-3 mt-3  d-flex">
+                        <label class="visually-hidden" for="LbFname">First Name</label>
+                        <input type="text" class="form-control me-2" id="Fname" placeholder="First Name"
+                            name="First-name">
+                        <label class="visually-hidden" for="LbLname">Last Name</label>
+                        <input type="text" class="form-control ms-2" id="Lname" placeholder="Last Name"
+                            name="Last-name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="visually-hidden" for="Email">Email</label>
+                        <input type="email" class="form-control" id="Email" placeholder="Email Address" name="Email">
+                    </div>
+                    <label class="visually-hidden" for="textarea">Write message here</label>
+                    <textarea class="form-control" style="border: 1px #60c095 solid;" rows="5" id="textarea"
+                        placeholder="Typing something " name="textarea"></textarea>
+                    <button type="submit" class="btn text-white mt-4" style="background-color: #36b37f;">Get In
+                        Touch</button>
+                </form>
+            </div>
+            <img style="margin-top: 237px; width: 100vw; left: -25px; position: relative;" src="/assets/divider.svg" alt="github">
+            <div class="text-center mt-3">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <img class="m-2" src="/assets/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <img class="m-2" src="/assets/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <img class="m-2" src="/assets/angellist.svg" alt="angellist">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <img class="m-2" src="/assets/medium.svg" alt="medium">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <img class="m-2" src="/assets/github.svg" alt="github">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 </body>
 
 </html>
