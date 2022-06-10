@@ -7,494 +7,428 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-    <style>
-        body {
-            position: relative;
-            overflow-x: hidden;
-        }
-
-        .background {
-            background-image: url('./assets/header-ill-desktop.svg');
-            background-repeat: no-repeat;
-        }
-
-        .crane {
-            position: absolute;
-            top: 2100px;
-            right: -15px;
-            background-image: url('./assets/crane-desktop.svg');
-            width: 200px;
-            height: 250px;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-
-        .boat {
-            position: absolute;
-            top: 2350px;
-            left: -50px;
-            background-image: url('./assets/boat-desktop.svg');
-            width: 200px;
-            height: 250px;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-
-        .contact-form-ill-1 {
-            position: absolute;
-            top: 3200px;
-            left: 0;
-            background-image: url('./assets/contact-form-ill-1-desktop.svg');
-            width: 200px;
-            height: 330px;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-
-        .contact-form-ill-2 {
-            position: absolute;
-            top: 3350px;
-            left: 400px;
-            background-image: url('./assets/contact-form-ill-2-desktop.svg');
-            width: 120px;
-            height: 100px;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-
-        .contact-form-ill-3 {
-            position: absolute;
-            top: 3050px;
-            right: -15px;
-            background-image: url('./assets/contact-form-ill-3-desktop.svg');
-            width: 200px;
-            height: 500px;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-    </style>
+    <title>Portfolio</title>
 </head>
-
 <body class="background" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
     <div class="crane"></div>
     <div class="boat"></div>
     <div class="contact-form-ill-1"></div>
-    <div class="contact-form-ill-2"></div>
+    <div class="contact-form-ill-2"><img class="img-fluid" src="./assets/contact-form-ill-2-desktop.svg" alt=""></div>
     <div class="contact-form-ill-3"></div>
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid justify-content-center">
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item p-2">
-                    <h5>
-                        <a class="nav-link text-body" href="#portfolio">Portfolio</a>
-                    </h5>
-                </li>
-                <li class="nav-item p-2">
-                    <h5>
-                        <a class="nav-link text-body" href="#about">About</a>
-                    </h5>
-                </li>
-                <li class="nav-item p-2">
-                    <h5>
-                        <a class="nav-link text-body" href="#contact">Contact</a>
-                    </h5>
-                </li>
-            </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand d-md-none text-dark">Welcome</a>
+
+            <div class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.00012 7C3.00012 6.44772 3.44784 6 4.00012 6H20.0001C20.5524 6 21.0001 6.44772 21.0001 7C21.0001 7.55228 20.5524 8 20.0001 8H4.00012C3.44784 8 3.00012 7.55228 3.00012 7ZM3.00012 12C3.00012 11.4477 3.44784 11 4.00012 11L20.0001 11C20.5524 11 21.0001 11.4477 21.0001 12C21.0001 12.5523 20.5524 13 20.0001 13L4.00012 13C3.44784 13 3.00012 12.5523 3.00012 12ZM4.00012 16C3.44784 16 3.00012 16.4477 3.00012 17C3.00012 17.5523 3.44784 18 4.00012 18H20.0001C20.5524 18 21.0001 17.5523 21.0001 17C21.0001 16.4477 20.5524 16 20.0001 16H4.00012Z"
+                        fill="#28352F" />
+                </svg>
+            </div>
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav h4 text-body">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link text-body">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-body">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link text-body">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container-fluid justify-content-center" style="margin-top: 150px;">
-        <h2 class="heading text-body text-center h1">Hey there. I'm Alex</h2>
-        <h2 class="heading text-success text-center h1">I'm a software developer</h2>
-        <p class="heading text-body text-center">
-            I can help you build a product, feature or website. Look through some of
-            my work and <br />
-            experience! If you like what you see and have a project you need
-            coded,<br />
-            don't hestiate to contact me.
-        </p>
+    <!-- intro section -->
+    <div class="container justify-content-center text-center w-80" style="margin-top: 156px;">
+        <div class="row d-sm-flex flex-column justify-content-center text-center">
+            <div class="col-lg-12 mx-auto">
+                <h1>Hey there. I'm Alex</h1>
+            </div>
+            <h2 class="fw-bold text-success">I'm a software developer</h2>
+            <div class="col-sm-10 col-md-8 col-lg-7 mx-auto">
+                I can help you build a product, feature or website. Look through some of my work and experience! If you
+                like
+                what you see and have a project you need coded, don't hesitate to contact me.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- social media icons section -->
+    <div class="text-center mt-3">
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.1753 0.394423C19.842 -0.00424693 19.2753 -0.103914 18.842 0.195088L16.9086 1.52399C16.0086 0.560536 14.742 0.0289756 13.3753 0.0289756C10.6753 0.0289756 8.44198 2.22166 8.44198 4.94591C8.44198 5.34458 8.47532 5.71002 8.57532 6.07547C6.24198 5.57713 4.84198 3.88279 4.30865 0.826316C4.24198 0.427646 3.94198 0.128643 3.54198 0.0289756C3.17532 -0.070692 2.77532 0.0954206 2.54198 0.394423C2.47532 0.460868 -3.02468 8.10205 4.94198 14.5804C4.17532 16.2083 1.87532 17.6037 0.975315 18.0688C0.541982 18.2681 0.341982 18.7332 0.441982 19.1984C0.541982 19.6635 0.941982 19.9625 1.40865 19.9625H3.14198C13.2753 19.9625 17.8753 14.9459 17.9753 3.71667L20.0753 1.72332C20.4753 1.3911 20.5086 0.793093 20.1753 0.394423Z"
+                            fill="#505F79" />
+                    </svg>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.061 3.03418C10.5722 3.03418 7.70523 5.86177 7.70523 9.37901V19.31C7.70523 19.6894 8.01611 19.9997 8.39608 19.9997H11.9885C12.3684 19.9997 12.6793 19.6894 12.6793 19.31V9.65487C12.6793 8.89625 13.3011 8.27556 14.061 8.27556C14.8209 8.27556 15.4427 8.89625 15.4427 9.65487V19.31C15.4427 19.6894 15.7536 19.9997 16.1336 19.9997H19.726C20.1059 19.9997 20.4168 19.6894 20.4168 19.31V9.37901C20.4168 5.89625 17.5843 3.03418 14.061 3.03418Z"
+                            fill="#505F79" />
+                        <path
+                            d="M2.90371 0C1.52202 0 0.416664 1.10345 0.416664 2.48276C0.416664 3.86207 1.52202 4.96552 2.90371 4.96552C4.2854 4.96552 5.39076 3.86207 5.39076 2.48276C5.39076 1.10345 4.2854 0 2.90371 0Z"
+                            fill="#505F79" />
+                        <path
+                            d="M4.69991 6.27539H1.10751C0.727545 6.27539 0.416664 6.58574 0.416664 6.96505V19.3099C0.416664 19.6892 0.727545 19.9995 1.10751 19.9995H4.69991C5.07988 19.9995 5.39076 19.6892 5.39076 19.3099V6.96505C5.39076 6.58574 5.07988 6.27539 4.69991 6.27539Z"
+                            fill="#505F79" />
+                    </svg>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.96416 20C11.6608 20 14.5833 16.5392 14.5833 12.0742C14.5833 10.3908 14.3092 8.87083 12.3983 8.41417C12.8633 7.14083 14.205 3.4575 14.205 2.2775C14.205 1.23833 13.58 0.3675 12.4658 0.3675C10.69 0.3675 9.09833 5.51167 8.59999 6.73833C8.21416 5.625 6.4075 0 4.81499 0C3.57749 0 2.99666 0.894167 2.99666 2.01917C2.99666 3.39833 4.35749 6.9725 4.85083 8.3475C4.60083 8.2575 4.32999 8.17917 4.05416 8.17917C3.12249 8.17917 2.13166 9.31583 2.13166 10.2342C2.13166 10.5817 2.32666 11.07 2.44999 11.3942C0.981661 11.785 0.416661 12.7458 0.416661 14.195C0.412495 17.015 3.13583 20 6.96416 20ZM10.9892 4.21917C11.1492 3.73833 11.8292 1.7075 12.4658 1.7075C12.8083 1.7075 12.9 2.055 12.9 2.3325C12.9 3.07833 11.3642 7.2 11.025 8.11333L9.67166 7.87917L10.9892 4.21917ZM4.24666 1.8875V1.88667C4.24666 1.42167 4.82416 0.101667 6.08916 3.72667L7.46666 7.645C6.84583 7.59417 6.36416 7.5275 6.05833 7.7C5.62416 6.575 4.24666 3.02417 4.24666 1.8875ZM4.15499 9.53083L4.15583 9.53167C5.32166 9.53167 6.82666 13.2267 6.82666 13.7267C6.82666 13.9258 6.63166 14.1717 6.40499 14.1717C5.57249 14.1717 3.34333 11.1675 3.34333 10.355C3.34666 10.0542 3.84833 9.53083 4.15499 9.53083ZM2.81499 12.5892C3.26833 12.5892 4.97583 14.945 4.97583 15.445C4.97583 15.6367 4.66916 15.7692 4.51083 15.7692C3.86999 15.7692 3.61916 15.1633 2.47749 13.7617C1.29499 14.9217 3.29333 17.1558 4.79833 17.1558C5.83666 17.1558 6.51333 16.2108 6.31083 15.515C6.45833 15.515 6.64083 15.5267 6.77666 15.4917C6.82083 16.55 7.13916 17.8117 8.43666 17.9017C8.43666 17.8667 8.51666 17.6242 8.51666 17.6125C8.51666 16.9325 8.09499 16.3392 8.09499 15.6475C8.09499 14.5417 8.95833 13.4717 9.83416 12.8467C10.1525 12.6125 10.5392 12.4675 10.9125 12.335C11.2992 12.1908 11.7092 12.0225 12.0025 11.7333C11.9583 11.2958 11.7758 10.9092 11.33 10.9092C10.2275 10.9092 6.53 11.0658 6.53 9.35833C6.53 9.09667 6.53416 8.84667 7.22333 8.84667C8.50916 8.84667 11.7733 9.15917 12.7283 9.98333C13.4483 10.6125 13.6958 14.405 11.4942 16.8075L11.4917 16.8083C10.3333 18.0583 8.8525 18.7067 7.125 18.7067C4.76083 18.7067 2.89333 17.4333 1.99416 15.2575C1.31333 13.5625 2.14583 12.5892 2.81499 12.5892ZM7.56583 11.8858C7.95333 12.0075 8.35083 12.0433 8.74916 12.1208C8.45416 12.3317 8.1925 12.59 7.94083 12.8667C7.82916 12.535 7.69333 12.2108 7.56583 11.8858Z"
+                            fill="#505F79" />
+                    </svg>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.8208 1.88042L20.4167 0.337684V0H14.8883L10.9483 9.90989L6.46582 0H0.669156V0.337684L2.53332 2.60547C2.71499 2.77305 2.80999 3.01811 2.78582 3.26484V12.1768C2.84332 12.4977 2.73999 12.8278 2.51666 13.0611L0.416656 15.6328V15.9663H6.37082V15.6286L4.27082 13.0611C4.04332 12.8269 3.93582 12.5027 3.98166 12.1768V4.46821L9.20832 15.9705H9.81582L14.31 4.46821V13.6312C14.31 13.8728 14.31 13.9225 14.1533 14.0808L12.5367 15.6615V16H20.38V15.6623L18.8217 14.1204C18.685 14.016 18.6142 13.8408 18.6433 13.6707V2.33011C18.6142 2.15916 18.6842 1.984 18.8208 1.88042Z"
+                            fill="#505F79" />
+                    </svg>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z"
+                            fill="#505F79" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="mt-5">
+        <div class="container">
+            <h2 class="text-center">My Recent Works</h2>
+            <div class="row g-4 text-center">
+                <!-- First Project -->
+                <div class="col-md-4 text-body">
+                    <div class="card">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;">
+                            </div>
+                            <h3 class="card-title text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                    on
+                                    rails</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">CSS</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">JavaScript</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">HTML</span>
+                            </div>
+                            <div class="text-center mt-2 mb-4">
+                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Project -->
+                <div class="col-md-4 text-body">
+                    <div class="card">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;">
+                            </div>
+                            <h3 class="card-title text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                    on
+                                    rails</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">CSS</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">JavaScript</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">HTML</span>
+                            </div>
+                            <div class="text-center mt-2 mb-4">
+                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third Project -->
+                <div class="col-md-4 text-body">
+                    <div class="card">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;">
+                            </div>
+                            <h3 class="card-title text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                    on
+                                    rails</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">CSS</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">JavaScript</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">HTML</span>
+                            </div>
+                            <div class="text-center mt-2 mb-4">
+                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth Project -->
+                <div class="col-md-4 text-body">
+                    <div class="card">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;">
+                            </div>
+                            <h3 class="card-title text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                    on
+                                    rails</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">CSS</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">JavaScript</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">HTML</span>
+                            </div>
+                            <div class="text-center mt-2 mb-4">
+                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fifth Project -->
+                <div class="col-md-4 text-body">
+                    <div class="card">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;">
+                            </div>
+                            <h3 class="card-title text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                    on
+                                    rails</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">CSS</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">JavaScript</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">HTML</span>
+                            </div>
+                            <div class="text-center mt-2 mb-4">
+                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sixth Project -->
+                <div class="col-md-4 text-body">
+                    <div class="card">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="height: 252px; background-color: #ebf0ee;">
+                            </div>
+                            <h3 class="card-title text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
+                            <div class="text-center">
+                                <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
+                                    on
+                                    rails</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">CSS</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">JavaScript</span>
+                                <span class="badge mb-2 mx-2 p-2 text-body"
+                                    style="background-color: #ebf0ee;">HTML</span>
+                            </div>
+                            <div class="text-center mt-2 mb-4">
+                                <button type="button" class="btn text-white" style="background-color: #36b37f;">See
+                                    Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+
+    <section id="about" style="margin-top: 192px; margin-bottom: 20px;">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-body">About Me</h2>
+                <p class="text-center col-sm-10 col-md-8 col-lg-7 mx-auto">
+                    I can help you build a product, feature or website. Look through some of
+                    my work and
+                    experience! If you like what you see and have a project you need
+                    coded,
+                    don't hestiate to contact me.
+                </p>
+                <div class="text-center">
+                    <button type="button" class="btn text-white" style="background-color: #36b37f;">Get the
+                        Resume</button>
+                </div>
+            </div>
+            <!-- Languages Card -->
+            <div class="row g-4 text-center mt-5">
+                <div class="col-md-4 text-body">
+                    <div class="card h-100" style="background-color: #ebf0ee;">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded">
+                                <div>
+                                    <img class="my-4" src="./assets/languages.svg" alt="languages icon" />
+                                </div>
+                                <h3 class="text-center mb-3">Languages</h3>
+                                <div class="text-center pb-3">
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">JavaScript</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Ruby</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">HTML</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks Card -->
+                <div class="col-md-4 text-body">
+                    <div class="card h-100">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="background-color: #ebf0ee;">
+                                <div>
+                                    <img class="my-4" src="./assets/frameworks.svg" alt="frameworks icon" />
+                                </div>
+                                <h3 class="text-center mb-3">Frameworks</h3>
+                                <div class="text-center pb-3">
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Bootstrap</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Ruby on Rails</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">RSpec</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Capybara</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Selenium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skills Card -->
+                <div class="col-md-4 text-body">
+                    <div class="card h-100">
+                        <div class="card-body p-0 m-0 text-center">
+                            <div class="rounded" style="background-color: #ebf0ee;">
+                                <div>
+                                    <img class="my-4" src="./assets/skills.svg" alt="skills icon" />
+                                </div>
+                                <h3 class="text-center mb-3">Skills</h3>
+                                <div class="text-center pb-3">
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">CodeKit</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">GitHub</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Codepen</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Gitlab</span>
+                                    <span class="badge bg-white p-2 m-2" style="color: #36b37f;">Terminal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="margin-top: 164px;">
+        <div class="container">
+            <div class="row align-items-center justify-content-around">
+                <div class="col-md">
+                    <p class="lead fw-bold ml-5 text-center text-lg-start">I'm always interested in hearing about new projects, so if you'd like
+                        to chat please get in touch.</p>
+                </div>
+                <div class="col-md">
+                    <form action="https://formspree.io/f/mrgjjjpg" method="post">
+                        <div class="mb-3 d-md-flex">
+                            <label for="firstName" class="form-label visually-hidden">First Name</label>
+                            <input type="text" class="form-control me-3 mb-3 mb-md-0" id="firstName" placeholder="First Name" required>
+                            <label for="lastName" class="form-label visually-hidden">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label visually-hidden">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label visually-hidden">Write your message</label>
+                            <textarea type="text" class="form-control" name="message" rows="5" id="message"
+                                placeholder="Typing something" required style="border: 1px #60c095 solid;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn text-white mt-2" style="background-color: #36b37f;">Get In
+                            Touch</button>
+                    </form>
+                </div>
+                <div>
+                    <img style="margin-top: 237px; width: 100%; left: -25px; position: relative;"
+                        src="/assets/divider.svg" alt="divider">
+                </div>
+            </div>
+        </div>
+        <!-- social media icons -->
         <div class="text-center mt-3">
             <ul class="list-inline">
                 <li class="list-inline-item">
                     <a href="#">
-                        <!-- <img class="m-2" src="/assets/twitter.svg" alt="twitter"> -->
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M20.1753 0.394423C19.842 -0.00424693 19.2753 -0.103914 18.842 0.195088L16.9086 1.52399C16.0086 0.560536 14.742 0.0289756 13.3753 0.0289756C10.6753 0.0289756 8.44198 2.22166 8.44198 4.94591C8.44198 5.34458 8.47532 5.71002 8.57532 6.07547C6.24198 5.57713 4.84198 3.88279 4.30865 0.826316C4.24198 0.427646 3.94198 0.128643 3.54198 0.0289756C3.17532 -0.070692 2.77532 0.0954206 2.54198 0.394423C2.47532 0.460868 -3.02468 8.10205 4.94198 14.5804C4.17532 16.2083 1.87532 17.6037 0.975315 18.0688C0.541982 18.2681 0.341982 18.7332 0.441982 19.1984C0.541982 19.6635 0.941982 19.9625 1.40865 19.9625H3.14198C13.2753 19.9625 17.8753 14.9459 17.9753 3.71667L20.0753 1.72332C20.4753 1.3911 20.5086 0.793093 20.1753 0.394423Z"
-                                fill="#505F79" />
-                        </svg>
+                        <img class="m-2" src="/assets/twitter.svg" alt="twitter">
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">
-                        <!-- <img class="m-2" src="/assets/linkedin.svg" alt="linkedin"> -->
-                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M14.061 3.03418C10.5722 3.03418 7.70523 5.86177 7.70523 9.37901V19.31C7.70523 19.6894 8.01611 19.9997 8.39608 19.9997H11.9885C12.3684 19.9997 12.6793 19.6894 12.6793 19.31V9.65487C12.6793 8.89625 13.3011 8.27556 14.061 8.27556C14.8209 8.27556 15.4427 8.89625 15.4427 9.65487V19.31C15.4427 19.6894 15.7536 19.9997 16.1336 19.9997H19.726C20.1059 19.9997 20.4168 19.6894 20.4168 19.31V9.37901C20.4168 5.89625 17.5843 3.03418 14.061 3.03418Z"
-                                fill="#505F79" />
-                            <path
-                                d="M2.90371 0C1.52202 0 0.416664 1.10345 0.416664 2.48276C0.416664 3.86207 1.52202 4.96552 2.90371 4.96552C4.2854 4.96552 5.39076 3.86207 5.39076 2.48276C5.39076 1.10345 4.2854 0 2.90371 0Z"
-                                fill="#505F79" />
-                            <path
-                                d="M4.69991 6.27539H1.10751C0.727545 6.27539 0.416664 6.58574 0.416664 6.96505V19.3099C0.416664 19.6892 0.727545 19.9995 1.10751 19.9995H4.69991C5.07988 19.9995 5.39076 19.6892 5.39076 19.3099V6.96505C5.39076 6.58574 5.07988 6.27539 4.69991 6.27539Z"
-                                fill="#505F79" />
-                        </svg>
+                        <img class="m-2" src="/assets/linkedin.svg" alt="linkedin">
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">
-                        <!-- <img class="m-2" src="/assets/angellist.svg" alt="angellist"> -->
-                        <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.96416 20C11.6608 20 14.5833 16.5392 14.5833 12.0742C14.5833 10.3908 14.3092 8.87083 12.3983 8.41417C12.8633 7.14083 14.205 3.4575 14.205 2.2775C14.205 1.23833 13.58 0.3675 12.4658 0.3675C10.69 0.3675 9.09833 5.51167 8.59999 6.73833C8.21416 5.625 6.4075 0 4.81499 0C3.57749 0 2.99666 0.894167 2.99666 2.01917C2.99666 3.39833 4.35749 6.9725 4.85083 8.3475C4.60083 8.2575 4.32999 8.17917 4.05416 8.17917C3.12249 8.17917 2.13166 9.31583 2.13166 10.2342C2.13166 10.5817 2.32666 11.07 2.44999 11.3942C0.981661 11.785 0.416661 12.7458 0.416661 14.195C0.412495 17.015 3.13583 20 6.96416 20ZM10.9892 4.21917C11.1492 3.73833 11.8292 1.7075 12.4658 1.7075C12.8083 1.7075 12.9 2.055 12.9 2.3325C12.9 3.07833 11.3642 7.2 11.025 8.11333L9.67166 7.87917L10.9892 4.21917ZM4.24666 1.8875V1.88667C4.24666 1.42167 4.82416 0.101667 6.08916 3.72667L7.46666 7.645C6.84583 7.59417 6.36416 7.5275 6.05833 7.7C5.62416 6.575 4.24666 3.02417 4.24666 1.8875ZM4.15499 9.53083L4.15583 9.53167C5.32166 9.53167 6.82666 13.2267 6.82666 13.7267C6.82666 13.9258 6.63166 14.1717 6.40499 14.1717C5.57249 14.1717 3.34333 11.1675 3.34333 10.355C3.34666 10.0542 3.84833 9.53083 4.15499 9.53083ZM2.81499 12.5892C3.26833 12.5892 4.97583 14.945 4.97583 15.445C4.97583 15.6367 4.66916 15.7692 4.51083 15.7692C3.86999 15.7692 3.61916 15.1633 2.47749 13.7617C1.29499 14.9217 3.29333 17.1558 4.79833 17.1558C5.83666 17.1558 6.51333 16.2108 6.31083 15.515C6.45833 15.515 6.64083 15.5267 6.77666 15.4917C6.82083 16.55 7.13916 17.8117 8.43666 17.9017C8.43666 17.8667 8.51666 17.6242 8.51666 17.6125C8.51666 16.9325 8.09499 16.3392 8.09499 15.6475C8.09499 14.5417 8.95833 13.4717 9.83416 12.8467C10.1525 12.6125 10.5392 12.4675 10.9125 12.335C11.2992 12.1908 11.7092 12.0225 12.0025 11.7333C11.9583 11.2958 11.7758 10.9092 11.33 10.9092C10.2275 10.9092 6.53 11.0658 6.53 9.35833C6.53 9.09667 6.53416 8.84667 7.22333 8.84667C8.50916 8.84667 11.7733 9.15917 12.7283 9.98333C13.4483 10.6125 13.6958 14.405 11.4942 16.8075L11.4917 16.8083C10.3333 18.0583 8.8525 18.7067 7.125 18.7067C4.76083 18.7067 2.89333 17.4333 1.99416 15.2575C1.31333 13.5625 2.14583 12.5892 2.81499 12.5892ZM7.56583 11.8858C7.95333 12.0075 8.35083 12.0433 8.74916 12.1208C8.45416 12.3317 8.1925 12.59 7.94083 12.8667C7.82916 12.535 7.69333 12.2108 7.56583 11.8858Z"
-                                fill="#505F79" />
-                        </svg>
+                        <img class="m-2" src="/assets/angellist.svg" alt="angellist">
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">
-                        <!-- <img class="m-2" src="/assets/medium.svg" alt="medium"> -->
-                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.8208 1.88042L20.4167 0.337684V0H14.8883L10.9483 9.90989L6.46582 0H0.669156V0.337684L2.53332 2.60547C2.71499 2.77305 2.80999 3.01811 2.78582 3.26484V12.1768C2.84332 12.4977 2.73999 12.8278 2.51666 13.0611L0.416656 15.6328V15.9663H6.37082V15.6286L4.27082 13.0611C4.04332 12.8269 3.93582 12.5027 3.98166 12.1768V4.46821L9.20832 15.9705H9.81582L14.31 4.46821V13.6312C14.31 13.8728 14.31 13.9225 14.1533 14.0808L12.5367 15.6615V16H20.38V15.6623L18.8217 14.1204C18.685 14.016 18.6142 13.8408 18.6433 13.6707V2.33011C18.6142 2.15916 18.6842 1.984 18.8208 1.88042Z"
-                                fill="#505F79" />
-                        </svg>
+                        <img class="m-2" src="/assets/medium.svg" alt="medium">
                     </a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">
-                        <!-- <img class="m-2" src="/assets/github.svg" alt="github"> -->
-                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z"
-                                fill="#505F79" />
-                        </svg>
+                        <img class="m-2" src="/assets/github.svg" alt="github">
                     </a>
                 </li>
             </ul>
         </div>
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="container-fluid" style="margin-top: 680px;">
-            <h2 class="text-body text-center h1">My Recent Works</h2>
-            <div class="container mt-3">
-                <div class="row">
-                    <div class="col p-2 text-body">
-                        <div class="card p-0 m-0">
-                            <div class="card-body p-0 m-0">
-                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                                <div class="text-center">
-                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
-                                        on
-                                        rails</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">CSS</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">JavaScript</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">HTML</span>
-                                </div>
-                                <div class="text-center mt-2 mb-4">
-                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                        Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col p-2 text-body">
-                        <div class="card p-0 m-0">
-                            <div class="card-body p-0 m-0">
-                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                                <div class="text-center">
-                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
-                                        on
-                                        rails</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">CSS</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">JavaScript</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">HTML</span>
-                                </div>
-                                <div class="text-center mt-2 mb-4">
-                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                        Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col p-2 text-body">
-                        <div class="card p-0 m-0">
-                            <div class="card-body p-0 m-0">
-                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                                <div class="text-center">
-                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
-                                        on
-                                        rails</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">CSS</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">JavaScript</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">HTML</span>
-                                </div>
-                                <div class="text-center mt-2 mb-4">
-                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                        Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </section>
 
-                <div class="row">
-                    <div class="col p-2 text-body">
-                        <div class="card p-0 m-0">
-                            <div class="card-body p-0 m-0">
-                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                                <div class="text-center">
-                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
-                                        on
-                                        rails</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">CSS</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">JavaScript</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">HTML</span>
-                                </div>
-                                <div class="text-center mt-2 mb-4">
-                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                        Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col p-2 text-body">
-                        <div class="card p-0 m-0">
-                            <div class="card-body p-0 m-0">
-                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                                <div class="text-center">
-                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
-                                        on
-                                        rails</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">CSS</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">JavaScript</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">HTML</span>
-                                </div>
-                                <div class="text-center mt-2 mb-4">
-                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                        Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col p-2 text-body">
-                        <div class="card p-0 m-0">
-                            <div class="card-body p-0 m-0">
-                                <div class="rounded" style="height: 252px; background-color: #ebf0ee;"></div>
-                                <h3 class="text-center pt-3">Multi-Post Stories <br>Gain + Glory</h3>
-                                <div class="text-center">
-                                    <span class="badge mb-2 mx-2 p-2 text-body" style="background-color: #ebf0ee;">Ruby
-                                        on
-                                        rails</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">CSS</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">JavaScript</span>
-                                    <span class="badge mb-2 mx-2 p-2 text-body"
-                                        style="background-color: #ebf0ee;">HTML</span>
-                                </div>
-                                <div class="text-center mt-2 mb-4">
-                                    <button type="button" class="btn text-white" style="background-color: #36b37f;">See
-                                        Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about" style="margin-top: 192px; margin-left: 10px;">
-            <div class="container-fluid justify-content-center">
-                <h2 class="heading text-body text-center h1">About Me</h2>
-                <p class="heading text-body text-center">
-                    I can help you build a product, feature or website. Look through some of
-                    my work and <br />
-                    experience! If you like what you see and have a project you need
-                    coded,<br />
-                    don't hestiate to contact me.
-                </p>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn text-white" style="background-color: #36b37f;">Get the Resume</button>
-            </div>
-            <div class="row mt-5 ms-2">
-                <div class="col px-1 text-body">
-                    <div class="card" style="width: 369px;">
-                        <div class="card-body p-0 m-0" style="height: 352px; background-color: #ebf0ee;">
-                            <div>
-                                <img class="img-fluid mx-auto d-block mt-5" src="./assets/languages.svg"
-                                    alt="languages icon" />
-                            </div>
-                            <h3 class="text-center pt-3 mb-4">Languages</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">JavaScript</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Ruby On Rails</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">HTML</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col px-1 text-body">
-                    <div class="card" style="width: 369px;">
-                        <div class="card-body p-0 m-0" style="height: 352px; background-color: #ebf0ee;">
-                            <div>
-                                <img class="img-fluid mx-auto d-block mt-5" src="./assets/frameworks.svg"
-                                    alt="languages icon" />
-                            </div>
-                            <h3 class="text-center pt-3 mb-4">Frameworks</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Bootstrap</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Ruby On Rails</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">RSpec</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Capybara</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Selenium</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col px-1 text-body">
-                    <div class="card" style="width:369px;">
-                        <div class="card-body p-0 m-0" style="height: 352px; background-color: #ebf0ee;">
-                            <div>
-                                <img class="img-fluid mx-auto d-block mt-5" src="./assets/skills.svg"
-                                    alt="languages icon" />
-                            </div>
-                            <h3 class="text-center pt-3 mb-4">Skills</h3>
-                            <div class="text-center">
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Codekit</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Github</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Codepen</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Gitlab</span>
-                                <span class="badge mb-2 mx-0 p-3 bg-white" style="color: #36b37f;">Terminal</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact section -->
-        <section id="contact" class="container-fluid" style="margin-top: 164px;">
-            <div class="container-fluid mx-auto d-flex justify-content-around" style="max-width: 1200px;">
-                <p class="ms-2 h4 mt-5" style="height: 256px; line-height: 52px;">
-                    I'm always interested in hearing<br> about new projects, so if you'd<br> like to chat please get in
-                    touch.
-                </p>
-                <form class="w-50" action="https://formspree.io/f/mzbooyno" method="post">
-                    <div class="mb-3 mt-3  d-flex">
-                        <label class="visually-hidden" for="LbFname">First Name</label>
-                        <input type="text" class="form-control me-2" id="Fname" placeholder="First Name"
-                            name="First-name">
-                        <label class="visually-hidden" for="LbLname">Last Name</label>
-                        <input type="text" class="form-control ms-2" id="Lname" placeholder="Last Name"
-                            name="Last-name">
-                    </div>
-                    <div class="mb-3">
-                        <label class="visually-hidden" for="Email">Email</label>
-                        <input type="email" class="form-control" id="Email" placeholder="Email Address" name="Email">
-                    </div>
-                    <label class="visually-hidden" for="textarea">Write message here</label>
-                    <textarea class="form-control" style="border: 1px #60c095 solid;" rows="5" id="textarea"
-                        placeholder="Typing something " name="textarea"></textarea>
-                    <button type="submit" class="btn text-white mt-4" style="background-color: #36b37f;">Get In
-                        Touch</button>
-                </form>
-            </div>
-            <div style="margin-top: 237px; width: 100vw; left: -25px; position: relative;">
-                <svg width="1440" height="1" viewBox="0 0 1440 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="1440" height="1" fill="#DFE1E6" />
-                </svg>
-            </div>
-            <!-- <img style="margin-top: 237px; width: 100vw; left: -25px; position: relative;" src="/assets/divider.svg" alt="divider"> -->
-            <div class="text-center mt-3">
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <!-- <img class="m-2" src="/assets/twitter.svg" alt="twitter"> -->
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.1753 0.394423C19.842 -0.00424693 19.2753 -0.103914 18.842 0.195088L16.9086 1.52399C16.0086 0.560536 14.742 0.0289756 13.3753 0.0289756C10.6753 0.0289756 8.44198 2.22166 8.44198 4.94591C8.44198 5.34458 8.47532 5.71002 8.57532 6.07547C6.24198 5.57713 4.84198 3.88279 4.30865 0.826316C4.24198 0.427646 3.94198 0.128643 3.54198 0.0289756C3.17532 -0.070692 2.77532 0.0954206 2.54198 0.394423C2.47532 0.460868 -3.02468 8.10205 4.94198 14.5804C4.17532 16.2083 1.87532 17.6037 0.975315 18.0688C0.541982 18.2681 0.341982 18.7332 0.441982 19.1984C0.541982 19.6635 0.941982 19.9625 1.40865 19.9625H3.14198C13.2753 19.9625 17.8753 14.9459 17.9753 3.71667L20.0753 1.72332C20.4753 1.3911 20.5086 0.793093 20.1753 0.394423Z"
-                                    fill="#505F79" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <!-- <img class="m-2" src="/assets/linkedin.svg" alt="linkedin"> -->
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14.061 3.03418C10.5722 3.03418 7.70523 5.86177 7.70523 9.37901V19.31C7.70523 19.6894 8.01611 19.9997 8.39608 19.9997H11.9885C12.3684 19.9997 12.6793 19.6894 12.6793 19.31V9.65487C12.6793 8.89625 13.3011 8.27556 14.061 8.27556C14.8209 8.27556 15.4427 8.89625 15.4427 9.65487V19.31C15.4427 19.6894 15.7536 19.9997 16.1336 19.9997H19.726C20.1059 19.9997 20.4168 19.6894 20.4168 19.31V9.37901C20.4168 5.89625 17.5843 3.03418 14.061 3.03418Z"
-                                    fill="#505F79" />
-                                <path
-                                    d="M2.90371 0C1.52202 0 0.416664 1.10345 0.416664 2.48276C0.416664 3.86207 1.52202 4.96552 2.90371 4.96552C4.2854 4.96552 5.39076 3.86207 5.39076 2.48276C5.39076 1.10345 4.2854 0 2.90371 0Z"
-                                    fill="#505F79" />
-                                <path
-                                    d="M4.69991 6.27539H1.10751C0.727545 6.27539 0.416664 6.58574 0.416664 6.96505V19.3099C0.416664 19.6892 0.727545 19.9995 1.10751 19.9995H4.69991C5.07988 19.9995 5.39076 19.6892 5.39076 19.3099V6.96505C5.39076 6.58574 5.07988 6.27539 4.69991 6.27539Z"
-                                    fill="#505F79" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <!-- <img class="m-2" src="/assets/angellist.svg" alt="angellist"> -->
-                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.96416 20C11.6608 20 14.5833 16.5392 14.5833 12.0742C14.5833 10.3908 14.3092 8.87083 12.3983 8.41417C12.8633 7.14083 14.205 3.4575 14.205 2.2775C14.205 1.23833 13.58 0.3675 12.4658 0.3675C10.69 0.3675 9.09833 5.51167 8.59999 6.73833C8.21416 5.625 6.4075 0 4.81499 0C3.57749 0 2.99666 0.894167 2.99666 2.01917C2.99666 3.39833 4.35749 6.9725 4.85083 8.3475C4.60083 8.2575 4.32999 8.17917 4.05416 8.17917C3.12249 8.17917 2.13166 9.31583 2.13166 10.2342C2.13166 10.5817 2.32666 11.07 2.44999 11.3942C0.981661 11.785 0.416661 12.7458 0.416661 14.195C0.412495 17.015 3.13583 20 6.96416 20ZM10.9892 4.21917C11.1492 3.73833 11.8292 1.7075 12.4658 1.7075C12.8083 1.7075 12.9 2.055 12.9 2.3325C12.9 3.07833 11.3642 7.2 11.025 8.11333L9.67166 7.87917L10.9892 4.21917ZM4.24666 1.8875V1.88667C4.24666 1.42167 4.82416 0.101667 6.08916 3.72667L7.46666 7.645C6.84583 7.59417 6.36416 7.5275 6.05833 7.7C5.62416 6.575 4.24666 3.02417 4.24666 1.8875ZM4.15499 9.53083L4.15583 9.53167C5.32166 9.53167 6.82666 13.2267 6.82666 13.7267C6.82666 13.9258 6.63166 14.1717 6.40499 14.1717C5.57249 14.1717 3.34333 11.1675 3.34333 10.355C3.34666 10.0542 3.84833 9.53083 4.15499 9.53083ZM2.81499 12.5892C3.26833 12.5892 4.97583 14.945 4.97583 15.445C4.97583 15.6367 4.66916 15.7692 4.51083 15.7692C3.86999 15.7692 3.61916 15.1633 2.47749 13.7617C1.29499 14.9217 3.29333 17.1558 4.79833 17.1558C5.83666 17.1558 6.51333 16.2108 6.31083 15.515C6.45833 15.515 6.64083 15.5267 6.77666 15.4917C6.82083 16.55 7.13916 17.8117 8.43666 17.9017C8.43666 17.8667 8.51666 17.6242 8.51666 17.6125C8.51666 16.9325 8.09499 16.3392 8.09499 15.6475C8.09499 14.5417 8.95833 13.4717 9.83416 12.8467C10.1525 12.6125 10.5392 12.4675 10.9125 12.335C11.2992 12.1908 11.7092 12.0225 12.0025 11.7333C11.9583 11.2958 11.7758 10.9092 11.33 10.9092C10.2275 10.9092 6.53 11.0658 6.53 9.35833C6.53 9.09667 6.53416 8.84667 7.22333 8.84667C8.50916 8.84667 11.7733 9.15917 12.7283 9.98333C13.4483 10.6125 13.6958 14.405 11.4942 16.8075L11.4917 16.8083C10.3333 18.0583 8.8525 18.7067 7.125 18.7067C4.76083 18.7067 2.89333 17.4333 1.99416 15.2575C1.31333 13.5625 2.14583 12.5892 2.81499 12.5892ZM7.56583 11.8858C7.95333 12.0075 8.35083 12.0433 8.74916 12.1208C8.45416 12.3317 8.1925 12.59 7.94083 12.8667C7.82916 12.535 7.69333 12.2108 7.56583 11.8858Z"
-                                    fill="#505F79" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <!-- <img class="m-2" src="/assets/medium.svg" alt="medium"> -->
-                            <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M18.8208 1.88042L20.4167 0.337684V0H14.8883L10.9483 9.90989L6.46582 0H0.669156V0.337684L2.53332 2.60547C2.71499 2.77305 2.80999 3.01811 2.78582 3.26484V12.1768C2.84332 12.4977 2.73999 12.8278 2.51666 13.0611L0.416656 15.6328V15.9663H6.37082V15.6286L4.27082 13.0611C4.04332 12.8269 3.93582 12.5027 3.98166 12.1768V4.46821L9.20832 15.9705H9.81582L14.31 4.46821V13.6312C14.31 13.8728 14.31 13.9225 14.1533 14.0808L12.5367 15.6615V16H20.38V15.6623L18.8217 14.1204C18.685 14.016 18.6142 13.8408 18.6433 13.6707V2.33011C18.6142 2.15916 18.6842 1.984 18.8208 1.88042Z"
-                                    fill="#505F79" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <!-- <img class="m-2" src="/assets/github.svg" alt="github"> -->
-                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M18.4019 7.46114C18.4019 6.32124 18.0359 5.25043 17.3372 4.31779C17.6033 3.41969 17.6699 2.27979 17.6033 0.967185C17.5701 0.414508 17.1375 0 16.6052 0C16.3057 0 13.7771 0.0345423 12.3131 1.38169C11.0488 1.1399 9.71794 1.1399 8.42034 1.38169C6.98966 0.0345423 4.46101 0 4.12829 0C3.59594 0 3.16341 0.414508 3.13014 0.967185C3.03032 2.27979 3.13014 3.41969 3.39631 4.31779C2.6976 5.28497 2.33162 6.35579 2.33162 7.46114C2.33162 9.8791 4.12829 12.0553 6.85657 13.0915C6.75675 13.2988 6.69021 13.5406 6.62367 13.7824C3.72903 13.4715 2.36489 10.7427 2.29834 10.639C2.06544 10.1209 1.46655 9.91364 0.967475 10.19C0.468399 10.4318 0.268769 11.0535 0.534942 11.5717C0.601486 11.7444 2.43143 15.4404 6.45731 15.8549V18.9637C6.45731 19.5509 6.88984 20 7.45546 20H13.278C13.8436 20 14.2762 19.5509 14.2762 18.9637V14.8532C14.2762 14.2314 14.1431 13.6442 13.9102 13.1261C16.6052 12.0553 18.4019 9.91364 18.4019 7.46114Z"
-                                    fill="#505F79" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
