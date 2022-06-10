@@ -1,0 +1,83 @@
+@media (min-width: 768px) {
+    body {
+        position: relative;
+    }
+    
+    #about p {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact p {
+        width: 70%;
+        margin-left: 150px;
+    }
+    
+    .background .contact-form-ill-2 {
+        position: absolute;
+        top: 200px;
+    }
+}
+
+
+.background {
+    background-image: url('./assets/header-ill-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.crane {
+    position: absolute;
+    top: 2100px;
+    right: -15px;
+    background-image: url('./assets/crane-desktop.svg');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.boat {
+    position: absolute;
+    top: 2350px;
+    left: -50px;
+    background-image: url('./assets/boat-desktop.svg');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.contact-form-ill-1 {
+    position: absolute;
+    top: 3200px;
+    left: 0;
+    background-image: url('./assets/contact-form-ill-1-desktop.svg');
+    width: 200px;
+    height: 330px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.background .contact-form-ill-2 {
+    position: absolute;
+    top: 3350px;
+    left: 400px;
+    width: 120px;
+    height: 100px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.contact-form-ill-3 {
+    position: absolute;
+    top: 3050px;
+    right: -15px;
+    background-image: url('./assets/contact-form-ill-3-desktop.svg');
+    width: 200px;
+    height: 500px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
